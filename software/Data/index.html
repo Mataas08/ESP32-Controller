@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Controller.js</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <header>
+            <ol id="instructions">
+                <li>Connect your gamepad</li>
+                <li>Some browsers require you to press a button to wake the gamepad</li>
+                <li>If your gamepad is supported, it will show up below</li>
+            </ol>
+            <div id="unsupported">
+                <p class="red">! ! !</p>
+                <p>Your browser does not support Controller.js.</p>
+                <p>Check the <a href="https://github.com/samiare/Controller.js#compatibility" target="_blank" rel="noopener noreferrer">compatibility list</a> and read more about <a href="http://caniuse.com/#feat=gamepad" target="_blank" rel="noopener noreferrer">Gamepad API support</a>.</p>
+            </div>
+        </header>
+
+        <main></main>
+
+        <br><br><br><br><br><br>
+
+        <script src="js/dat.gui.min.js"></script>
+        <script src="js/Controller.js"></script>
+        <script src="js/Controller.layouts.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
