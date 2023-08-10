@@ -14,23 +14,27 @@ A program that allows you to remotely control the ESP32 module via wifi using a 
 ### Setting
 wifi password in config.h
 ```cpp
-const char* ssid = "***";
-const char* password = "***";
+const char* ssid = "#$%!**";
+const char* password = "@#$%*!";
 ```
 
 ### Usage
-Program use 2 core. for this example pleas do not write in loop but in Program void
+Program use 2 core. for this example pleas do not write in loop but 
 ```cpp
-void program() {
-  Serial.print("|" + String(LEFT_SHOULDER_BOTTOM) + "|" + String(RIGHT_SHOULDER_BOTTOM) + "|" + String(LEFT_ANALOG_STICK_X) + "|" + String(LEFT_ANALOG_STICK_Y) + "|" + String(RIGHT_ANALOG_STICK_X) + "|" + String(RIGHT_ANALOG_STICK_Y) + "|");
-  Serial.print("|");
-  Serial.print("|" + String(FACE_1) + "|" + String(FACE_2) + "|" + String(FACE_3) + "|" + String(FACE_4) + "|");
-  Serial.print("|");
-  Serial.print("|" + String(DPAD_UP) + "|" + String(DPAD_DOWN) + "|" + String(DPAD_LEFT) + "|" + String(DPAD_RIGHT) + "|");
-  Serial.print("|");
-  Serial.print("|" + String(LEFT_SHOULDER) + "|" + String(RIGHT_SHOULDER) + "|" + String(LEFT_ANALOG_BUTTON) + "|" + String(RIGHT_ANALOG_BUTTON) + "|");
-  Serial.print("|");
-  Serial.println("|" + String(START) + "|" + String(SELECT) + "|" + String(HOME) + "|");
+void Task1code( void * pvParameters ) {
+...
+ for (;;) {
+  ...
+ }
+}
+```
+and
+```cpp
+void Task2code( void * pvParameters ) {
+...
+ for (;;) {
+  ...
+ }
 }
 ```
 
