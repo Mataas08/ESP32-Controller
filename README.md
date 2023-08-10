@@ -40,6 +40,8 @@ void Task2code( void * pvParameters ) {
 
 controller variable 
 ```cpp
+byte VIBRATION = 0;
+
 float LEFT_ANALOG_STICK_X = 0.00;
 float LEFT_ANALOG_STICK_Y = 0.00;
 float RIGHT_ANALOG_STICK_X = 0.00;
@@ -62,6 +64,7 @@ bool DPAD_LEFT = 0;
 bool DPAD_RIGHT = 0;
 bool HOME = 0;
 ```
+if you want turn on and off vibration you can change a "VIBRATION" wariabla betwen 0 to 100 (it is power)
 
 ### OTA
 ota is available on http://hostname/update
